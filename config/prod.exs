@@ -13,7 +13,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :phoenix_trello, PhoenixTrello.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [scheme: "https", host: "phoenix-trello.herokuapp.com", port: 443],
+  url: [scheme: "https", host: "serene-reaches-21142.herokuapp.com", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/manifest.json",
   secret_key_base: "ALONGSECRETWHICHIDONTKNOW"
@@ -21,11 +21,11 @@ config :phoenix_trello, PhoenixTrello.Endpoint,
 # Do not print debug messages in production
 config :logger, level: :info
 
-# Configure your database
-config :phoenix_trello, PhoenixTrello.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  url: System.get_env("DATABASE_URL"),
-  pool_size: 20
+# # Configure your database
+# config :phoenix_trello, PhoenixTrello.Repo,
+#   adapter: Ecto.Adapters.Postgres,
+#   url: System.get_env("DATABASE_URL"),
+#   pool_size: 20
 
 # Configure guardian
 config :guardian, Guardian,
@@ -71,3 +71,12 @@ config :guardian, Guardian,
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
 # import_config "prod.secret.exs"
+
+# Configure your database
+config :phoenix_trello, PhoenixTrello.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  username: "svqfyikmkgtojd",
+  password: "d65300d39c8ce6b038247d3df5507b87ae2de347fb00b0376ce59a4c1b9d7ea1",
+  database: "dem01stjt9jvcr",
+  hostname: "postgresql-deep-80518",
+  pool_size: 10
