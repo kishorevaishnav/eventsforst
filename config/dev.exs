@@ -39,7 +39,7 @@ config :phoenix_trello, PhoenixTrello.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
-  database: "phoenix_trello_dev",
+  database: "eventsforst",
   hostname: "localhost",
   pool_size: 10
 
