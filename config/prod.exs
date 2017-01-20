@@ -78,5 +78,5 @@ config :phoenix_trello, PhoenixTrello.Repo,
   username: "svqfyikmkgtojd",
   password: "d65300d39c8ce6b038247d3df5507b87ae2de347fb00b0376ce59a4c1b9d7ea1",
   database: "dem01stjt9jvcr",
-  hostname: "postgresql-deep-80518",
+  hostname: "ec2-107-21-215-254.compute-1.amazonaws.com",
   pool_size: 10
