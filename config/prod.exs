@@ -29,7 +29,7 @@ config :logger, level: :info
 
 # Configure guardian
 config :guardian, Guardian,
-  secret_key: System.get_env("GUARDIAN_SECRET_KEY")
+  secret_key: System.get_env("GUARDIAN_SECRET_KEY") || "ALONGSECRETWHICHIDONTKNOW"
 
 # ## SSL Support
 #
